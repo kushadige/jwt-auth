@@ -13,6 +13,7 @@ function verifyToken(req: Request, res: Response, next: NextFunction) {
 
     jwt.verify(token, process.env.JWT_SECRET!, (err, user) => {
       if (err) return res.sendStatus(403);
+      req.user = user;
       next();
     });
   } catch (err) {
