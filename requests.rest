@@ -1,0 +1,20 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9ndXpoYW5rdXNsYXIiLCJpYXQiOjE2OTIzMTg2ODEsImV4cCI6MTY5MjMxODcwMX0.ZMYjcwz2-v6-q5Os52ri9a21bSDTl_flkVQAphq3fWg
+
+####
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "oguzhankuslar"
+}
+
+####
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9ndXpoYW5rdXNsYXIiLCJpYXQiOjE2OTIzMTg2NDB9.3Qb-UHGesSuV2-QwKZomBnT7vHSeRjR-AhbteoX0pNs"
+}
